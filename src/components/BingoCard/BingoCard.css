@@ -1,10 +1,8 @@
 .bingo-container {
-  perspective: 1000px;
-  width: 100%;
-  max-width: 175px;
   aspect-ratio: 1 / 1;
-  margin: 5px;
-  
+  width: 100%;
+  height: calc((100vh - 28px) / 4); /* 28px = 3 row-gaps (3x4px) + 2 paddings (8px top + bottom) */
+  margin: 0;
 }
 
 .card {
