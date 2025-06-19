@@ -1,7 +1,8 @@
 .bingo-board {
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 1rem;
   place-items: center;
 
   position: absolute;
