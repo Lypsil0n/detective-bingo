@@ -1,5 +1,7 @@
 .bingo-board {
   display: grid;
+  height: 100vh;  /* fixed viewport height */
+  overflow-y: auto;
   grid-template-columns: repeat(4, minmax(100px, 1fr));
   gap: 8px;           /* sets both row and column gap */
   /* Replace with: */
@@ -10,5 +12,4 @@
   max-height: 100vh;
   padding: 8px;
   box-sizing: border-box;
-  overflow-y: auto;    /* scroll if too tall */
 }
