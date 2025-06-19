@@ -9,7 +9,7 @@ import bingoInformation from './data/bingo_information.json'
 function App() {
   const data = generateCards(bingoInformation)
   return (
-    <div>
+    <div className='App'>
       <Header/>
       <BingoBoard data={data}/>
     </div>
