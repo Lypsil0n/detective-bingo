@@ -4,4 +4,6 @@
   margin-bottom: 20px;
   padding-bottom: 1rem;
   font-size: 50px;
+  color: #f1ddb7;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
