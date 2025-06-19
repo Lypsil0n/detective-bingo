@@ -1,11 +1,9 @@
 .bingo-board {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 0.5px;       /* smaller vertical gap */
-  column-gap: 12px;   /* keep horizontal gap */
-  max-width: 800px;
-  height: 80vh;
-  margin: auto;
-  padding: 16px;
+  grid-template-columns: repeat(4, minmax(80px, 1fr)); /* each card min 80px */
+  gap: 6px;
+  width: 100vw;
+  height: 100vh;
+  padding: 8px;
+  box-sizing: border-box;
 }
