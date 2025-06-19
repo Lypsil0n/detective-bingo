@@ -1,12 +1,11 @@
 .bingo-board {
   display: grid;
-  flex-wrap: wrap;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-  place-items: center;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 0.5px;       /* smaller vertical gap */
+  column-gap: 12px;   /* keep horizontal gap */
+  max-width: 800px;
+  height: 80vh;
+  margin: auto;
+  padding: 16px;
 }
