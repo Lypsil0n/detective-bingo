@@ -1,18 +1,18 @@
 import './BingoBoard.css'
 import BingoCard from '../BingoCard/BingoCard'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Modal from 'react-modal'
 
 function BingoBoard({data}: any) {
     const [isOpen, setIsOpen] = useState(true);
 
-    function openModal() {
-        setIsOpen(true)
-    }
+    // function openModal() {
+    //     setIsOpen(true)
+    // }
 
-    function closeModal() {
-        setIsOpen(false)
-    }
+    // function closeModal() {
+    //     setIsOpen(false)
+    // }
 
     return (
         <div className='bingo-board'>
