@@ -32,7 +32,8 @@ function BingoBoard({data}: any) {
                     flexDirection: 'column',
                     justifyContent: 'space-between',
                     borderRadius: '12px',
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                    textAlign: 'center'
                 }
             }}>
                 <p>Dags att bli mästerdetektiv! Vad kan du se för saker runt omkring dig? Klicka på brickorna för att vända på dem.</p>
@@ -50,20 +51,19 @@ function BingoBoard({data}: any) {
                 onRequestClose={() => setIsFinishedModalOpen(false)}
                 style={{
                     content: {
-                    background: '#d4edda',
-                    width: '250px',
-                    height: '200px',
-                    margin: 'auto',
-                    padding: '20px',
-                    borderRadius: '12px',
-                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-                    textAlign: 'center'
+                        background: '#d4edda',
+                        width: '250px',
+                        height: '250px',
+                        margin: 'auto',
+                        padding: '20px',
+                        borderRadius: '12px',
+                        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                        textAlign: 'center'
                     }
                 }}
                 >
                 <p>Grattis! Du är en riktig mästerdetektiv!</p>
                 <p>Psst! Ladda om sidan, så får du en helt ny bingobricka!</p>
-                <button onClick={() => setIsFinishedModalOpen(false)}>Stäng</button>
             </Modal>
         </div>
     )

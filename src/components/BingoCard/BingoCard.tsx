@@ -6,8 +6,10 @@ function BingoCard({information, onFlip}: any) {
   const [flipped, setFlipped] = useState(false);
 
   const handleClick = () => {
-    setFlipped(!flipped) 
-    onFlip(); 
+    if (!flipped) {
+      setFlipped(!flipped) 
+      onFlip(); 
+    }
   }
 
   return (
