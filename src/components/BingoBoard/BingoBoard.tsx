@@ -19,8 +19,8 @@ function BingoBoard({data}: any) {
             <Modal isOpen={isOpen} style={{
                 content: {
                     background: '#f1ddb7',
-                    width: '300px',
-                    height: '300px',
+                    width: '250px',
+                    height: '250px',
                     margin: 'auto',
                     padding: '20px',
                     display: 'flex',
