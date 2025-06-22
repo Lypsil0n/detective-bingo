@@ -26,8 +26,8 @@ function BingoBoard({data}: any) {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
-                    borderRadius: '25px',
-                    border: '2px solid black'
+                    borderRadius: '12px',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)'
                 }
             }}>
                 <p>Dags att bli mästerdetektiv! Vad kan du se för saker runt omkring dig? Klicka på brickorna för att vända på dem.</p>
