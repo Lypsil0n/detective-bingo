@@ -2,10 +2,13 @@ import { useState } from "react";
 import "./BingoCard.css";
 
 
-function BingoCard({information}: any) {
+function BingoCard({information, onFlip}: any) {
   const [flipped, setFlipped] = useState(false);
 
-  const handleClick = () => setFlipped(!flipped)
+  const handleClick = () => {
+    setFlipped(!flipped) 
+    onFlip(); 
+  }
 
   return (
     <div className="bingo-container" onClick={handleClick}>
