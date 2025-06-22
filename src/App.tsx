@@ -12,6 +12,7 @@ function App() {
     <div className='App'>
       <Header/>
       <BingoBoard data={data}/>
+      <footer className='footer'>Utvecklat och designat av Samuel Stenfelt på uppdrag av Teatersmedjan i Karlshamn</footer>
     </div>
   )
 }

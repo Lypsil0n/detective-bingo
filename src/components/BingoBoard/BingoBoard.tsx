@@ -16,9 +16,22 @@ function BingoBoard({data}: any) {
 
     return (
         <div className='bingo-board'>
-            <Modal isOpen={isOpen}>
-                <button onClick={() => setIsOpen(false)}>Stäng</button>
-                <p>Hello!</p>
+            <Modal isOpen={isOpen} style={{
+                content: {
+                    background: '#f1ddb7',
+                    width: '300px',
+                    height: '300px',
+                    margin: 'auto',
+                    padding: '20px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    borderRadius: '25px',
+                    border: '2px solid black'
+                }
+            }}>
+                <p>Dags att bli mästerdetektiv! Vad kan du se för saker runt omkring dig? Klicka på brickorna för att vända på dem.</p>
+                <button onClick={() => setIsOpen(false)}>Börja</button>
             </Modal>
             {data.map((information: any) =>
                 <BingoCard key={information.id} information={information} />
